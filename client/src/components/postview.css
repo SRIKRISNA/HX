@@ -2,7 +2,7 @@
     background-color: #fff;
 }
 .post{
-    margin: 20px;
+    /* margin: 20px; */
     max-width: 30vw;
     border-radius: 10px;
     padding-bottom: 20px;
@@ -69,6 +69,7 @@ h3 > span{
 }
 #likes{
     padding-right: 10px;
+    /* padding-left: 0; */
     margin-top: 7px;
 }
 /* delete post */
