@@ -12,7 +12,7 @@ app.post("/signup",(req,res)=>{
           let salt = 10;
           bcryptjs.genSalt(salt).then((saltvalue)=>{
               bcryptjs.hash(req.body.password,saltvalue).then((hashpassword)=>{
-                  UserModel.create({userName:req.body.userName,password:hashpassword}).then((user)=>{
+                  UserModel.create({userName:req.body.userName, lname:req.body.lname, email:req.body.email, address:req.body.address, country:req.body.country, gender:req.body.gender , phoneNumber:req.body.phoneNumber , password:hashpassword}).then((user)=>{
                     res.status(200).json("User Added")
                   }).catch((err)=>{
                     res.status(400).json("Process Issue")
