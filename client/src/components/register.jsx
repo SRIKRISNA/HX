@@ -72,8 +72,8 @@ function Register() {
                         <div className="inputs"><input type="textarea" placeholder="Address" onChange={(e) => inputHandle(e, 'address')} value={userData.address}></input></div>
                         <div className="inputs"><input type="text" placeholder="Country" onChange={(e) => inputHandle(e, 'country')} value={userData.country}></input></div>
                         <div className="inputs" onChange={(e) => inputHandle(e, 'gender')} value={userData.gender}>
-                             Gender <input type="radio" value="MALE" name="gender" /> Male
-                            <input type="radio" value="FEMALE" name="gender" /> Female
+                             Gender <input type="radio" value="MALE" name="gender" id="gender" /> Male
+                            <input type="radio" value="FEMALE" name="gender" id="gender" /> Female
                         </div>
                         <div className="inputs"><input type="text" placeholder="Phone number" onChange={(e) => inputHandle(e, 'phonenumber')} value={userData.phoneNumber}></input></div>
 

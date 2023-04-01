@@ -27,7 +27,7 @@ const PostForm = () =>{
     const handlePosts =()=>{
         console.log(posts);
         axios({
-            url: "http://localhost:5000/user//postform",
+            url: "http://localhost:5000/post/postform",
             method: "POST",
             headers: {
             },
@@ -37,7 +37,7 @@ const PostForm = () =>{
         }).catch((err)=>{
             console.log(err);
         })
-        navigate("http://localhost:5000/user/postview");
+        navigate("/dashboard");
     }
 
     return(

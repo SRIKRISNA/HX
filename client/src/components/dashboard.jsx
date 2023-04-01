@@ -10,7 +10,7 @@ function Dashboard(){
     
     const [userData, setPostData] = useState([]);
     useEffect(()=> {
-        axios.get('http://localhost:5000/user/postform').then((res)=>{
+        axios.get('http://localhost:5000/post/postform').then((res)=>{
             let data = res.data.reverse();
             console.log(data)
             setPostData(data);
@@ -20,7 +20,7 @@ function Dashboard(){
     }, []);
 
     function deletePost(_id) {
-        axios.delete(`http://localhost:5000/user/delete/${_id}`).then((res) => {
+        axios.delete(`http://localhost:5000/post/delete/${_id}`).then((res) => {
             const newList = userData.filter((item) => item._id !== _id);
             setPostData(newList);
             console.log("post deleted");

@@ -1,12 +1,12 @@
 
 /* register form */
 *{
-    background-color: rgb(243, 243, 243);
+    /* background-color: rgb(243, 243, 243); */
     color: rgb(22, 22, 22);
 }
 input{
     margin-bottom: 18px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 243, 243);
 }
 
 input, button{
@@ -16,6 +16,9 @@ input, button{
 }
 input{
     width: 340px;
+}
+#gender{
+    width: fit-content;
 }
 button{
     cursor: pointer;
