@@ -1,0 +1,87 @@
+.container{
+    background-color: #fff;
+}
+.post{
+    margin: 20px;
+    max-width: 30vw;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 15px 25px rgb(0 0 0 / 30%);
+}
+.nav{
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background: white;
+    box-shadow: 2px 2px #f2f2f2;
+    border-bottom: 0px solid rgb(145, 206, 170);
+}
+.postContainer{
+    padding-top: 60px;
+    background: #0f0808;
+    padding-bottom: 1px;
+}
+#logo{
+    margin-left: 5vw;
+    height: 60px;
+}
+#camera{
+    margin-right: 5vw;
+    height: 45px;
+}
+#postimg{
+    min-width: -webkit-fill-available;
+}
+img{
+    max-width: -webkit-fill-available;
+}
+
+.user-information{
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-information h3{
+    margin: 0px !important;
+}
+.name_location{
+
+}
+h3 > span{
+    color: grey;
+}
+.user-meta, .user-likes, .user-description{
+    margin: 0px 20px;
+}
+.user-meta{
+    padding-top: 20px;
+    float: right;
+}
+#likes{
+    padding-right: 10px;
+    margin-top: 7px;
+}
+/* delete post */
+#delete_btn{
+    border-color: red;
+    padding: 2px 5px ;
+    color: red;
+}
+#delete_btn:hover{
+    background-color: red;
+    color: white;
+}
+
+header{
+    display: flex;
+}
